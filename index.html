@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Weather Dashboard</h1>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- City Search and Current Location -->
+    <div class="search-section">
+      <h2>Enter a City Name</h2>
+      <input id="city-input" type="text" placeholder="E.g., New York, London, Tokyo">
+      <button id="search-btn">Search</button>
+      <div class="or">OR</div>
+      <button id="current-location-btn">Use Current Location</button>
+    </div>
+
+    <!-- Current Weather -->
+    <div id="current-weather" class="current-weather hidden">
+      <h2 id="city-name"></h2>
+      <p id="temperature"></p>
+      <p id="wind-speed"></p>
+      <p id="humidity"></p>
+      <img id="weather-icon" src="" alt="Weather Icon">
+      <p id="weather-description"></p>
+    </div>
+  </div>
+
+  <!-- 5-Day Forecast -->
+  <div id="forecast-container" class="forecast-container hidden">
+    <!-- Forecast Cards will be generated here -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
